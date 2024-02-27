@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+  
 <body>
+  <p id="demo"></p>
     <script>
 
 
@@ -38,11 +40,85 @@
   if(name == "Tanjem"){
     document.write("I am Tanjem")
   };
+  document.write("<br>");
+   
+  var a = 18;
 
+  if(a<10)
+  document.write("Tanjem");
+  if (a == 18 && a > 30)
+  document.write("Ahmed");
+  if (a>9 && a==18)
+  document.write("Abir");
 
+  document.write("<br>");
 
+  var a = 18;
+  if( a < 35){
+   
+  if(a == 18){
+  document.write("Tanjem Ahmed Abir");
+  } 
+  }
+  document.write("<br>");
+  var hour = 24;
+  if (hour < 18) {
+  document.write("Good day");
+} else {
+  document.write("Good evening");
+}
+document.write("<br>");
+var time = 24;
+if (time == 40) {
+  document.write("Good morning");
+} else if (time > 60) {
+  document.write("Good day");
+} else {
+  document.write("Good night");
+}
+document.write("<br>");
+var day;
+switch (new Date().getDay()) {
+  case 0:
+    day = "Sunday";
+    break;
+  case 1:
+    day = "Monday";
+    break;
+  case 2:
+     day = "Tuesday";
+    break;
+  case 3:
+    day = "Wednesday";
+    break;
+  case 4:
+    day = "Thursday";
+    break;
+  case 5:
+    day = "Friday";
+    break;
+  case 6:
+    day = "Saturday";
+};
+document.getElementById("demo").innerHTML= "The Day "+day;
 
+document.write("<br>");
 
+function Name(){
+  document.write("Abir Ahmed");
+}
+
+Name();
+document.write("<br>");
+function sun(fname){
+  document.write("Tanjem Ahmed "+fname);
+}
+sun("Abir");
+document.write("<br>");
+function one(){
+  console.log("Tanjem Ahmed")
+}
+one();
     </script>
 
 
